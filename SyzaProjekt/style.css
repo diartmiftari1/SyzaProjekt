@@ -1,0 +1,67 @@
+/* Navbar styling */
+.navbar-custom {
+    background-color: #343a40;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-custom .navbar-brand .logo {
+    height: 90px; /* Adjust the height as needed */
+    width: auto;  /* Maintain aspect ratio */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffffff;
+    transition: width 0.3s ease, right 0.3s ease;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    right: 0;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Navbar background change on scroll */
+  body {
+    height: 2000px; /* Just to enable scrolling for demonstration */
+  }
+  
+  .navbar-scrolled {
+    background-color: #007bff !important;
+  }
+  
+  /* Navbar toggler styling */
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  #bannerVideo {
+    width: 100%;
+    height: auto;
+  }
